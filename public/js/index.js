@@ -12,7 +12,7 @@ $a.style.color = '#E51B3E';
 confirm('¿Desea colocar un fondo de pantalla?')? document.querySelector('body').classList.toggle('fondo') : '';
 
 for(let i = 0; i < $p.length; i++){
-    $p[i].classList.toggle((i % 2 != 0)? 'destacadoPar' : 'destacadoImpar');
+    $p[i].classList.toggle((i % 2 == 0)? 'destacadoPar' : 'destacadoImpar');
 }
 
 $main.style.display = 'block';
